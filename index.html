@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Příklad interakce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>1. Funkce pro alert</h1>
+    <button onclick="showAlert()">Klikni na mě (alert)</button>
+    <h1>2. Funkce pro změnu textu tlačítka</h1>
+    <button id="changeTextButton" onclick="changeButtonText()">Změň mě</button>
+    <h1>3/8 Funkce pro změnu dynamického textu</h1>
+    <h1>Funkce pro změnu textu při přejetí myší</h1>
+    <div id="dynamicText">Toto je dynamický text.</div>
+    <button onclick="changeDynamicText()">Změň text</button>
+    <h1>4. Funkce pro napsání textu</h1>
+    <button onclick="writeText()">Napiš text</button>
+    <div id="writtenText"></div>
+    <h1>5. Funkce pro pozdrav</h1>
+    <input type="text" id="nameInput" placeholder="Zadejte své jméno">
+    <button onclick="greetUser()">Pozdrav</button>
+    <div id="greetingLabel"></div>
+    <h1>6. Funkce pro zobrazení aktuálního času</h1>
+    <button onclick="showCurrentTime()">Zobraz aktuální čas</button>
+    <div id="currentTime"></div>
+    <h1>7. Funkce pro zobrazení aktuálního data</h1>
+    <button onclick="showCurrentDate()">Zobraz aktuální datum</button>
+
+        <h2>Přičtení 3</h2>
+        <input type="number" id="input1" placeholder="Zadejte číslo">
+        <button onclick="addThree()">Přičíst 3</button>
+        <p id="result1"></p>
+
+        <h2>Sečtení dvou čísel</h2>
+        <input type="number" id="input2" placeholder="Zadejte první číslo">
+        <input type="number" id="input3" placeholder="Zadejte druhé číslo">
+        <button onclick="addTwoNumbers()">Sečíst</button>
+        <p id="result2"></p>
+    
+        <h2>Obrázek</h2>
+        <img id="image" src="https://ih1.redbubble.net/image.1278367197.2995/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Obrázek" 
+             onmouseover="enlargeImage()" 
+             onmouseout="resetImage()" 
+             style="width: 150px; height: auto;">
+
+
+    
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</center>
+</body>
+</html>
