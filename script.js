@@ -66,3 +66,15 @@
         function resetImage() {
             document.getElementById('image').style.width = '150px';
         }   
+
+        // 13. Task manager - uživatel bude mít možnost přidat úkol, který se mu po kliknutí na button přidá pod input. Uživatel může úkol odebrat kliknutím
+        function PridatUlohu(){
+            const hod = document.getElementById("input4").value
+
+            document.getElementById("ulohy").innerHTML += "<p id="+hod+">"+hod+" <button onclick=smazat('"+hod+"')>Smazat</button></p>"
+
+        }
+
+        function smazat(uloha){
+            document.getElementById(uloha).remove()
+        }
